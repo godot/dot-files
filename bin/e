@@ -1,0 +1,25 @@
+#! /bin/bash
+
+#remove :in from the end of path [from ruby/rspec path]
+filepath=$(awk '{sub(/:in$/,"")}1' <<< "$1")
+
+file=$(awk '{sub(/:[0-9]*$/,"")}1' <<< "$filepath")
+
+function line_num {
+    line=$(awk '{sub(/^.*:/,"")}1' <<< "$1")
+
+    if [ $line = $1 ];
+    then line=""
+    else
+        line="+"$line
+    fi
+
+    echo $line
+}
+
+if [ $file ]
+then
+    emacsclient -n -c $(line_num $filepath) "$file"
+else
+    emacsclient -n -c .
+fi
