@@ -24,7 +24,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (flycheck rubocop enh-ruby-mode expand-region better-defaults ag evil-multiedit evil-surround helm helm-ag helm-git helm-package helm-projectile helm-swoop evil-leader evil evil-escape evil-iedit-state evil-magit evil-space)))
+    (ace-jump-buffer ace-jump-helm-line ace-jump-mode restclient-test restclient restclient-helm flycheck rubocop enh-ruby-mode expand-region better-defaults ag evil-multiedit evil-surround helm helm-ag helm-git helm-package helm-projectile helm-swoop evil-leader evil evil-escape evil-iedit-state evil-magit evil-space)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
