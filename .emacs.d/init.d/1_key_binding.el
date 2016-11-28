@@ -8,6 +8,12 @@
 (evil-leader/set-key "v v" 'er/expand-region)
 (evil-leader/set-key "e e" 'eval-last-sexp)
 
+;; ORG
+
+(evil-leader/set-key "o a" 'org-agenda)
+(evil-leader/set-key "o c" 'org-capture)
+(evil-leader/set-key "o s" 'org-calendar-goto-agenda)
+
 ;; FILES
 (evil-leader/set-key "f s" 'save-buffer)
 (evil-leader/set-key "f r" 'helm-recentf)
@@ -19,17 +25,26 @@
 (evil-leader/set-key "p b" 'helm-buffers-run-browse-project)
 (evil-leader/set-key "p v" 'magit-status)
 
+;; GIT
+(evil-leader/set-key "g s" 'magit-status)
+(evil-leader/set-key "g S" 'magit-stage-file)
+
 ;; BUFFERS
-(evil-leader/set-key "TAB" 'evil-prev-buffer)
+(evil-leader/set-key "TAB" 'mode-line-other-buffer)
 (evil-leader/set-key "b b" 'helm-buffers-list)
 (evil-leader/set-key "b d" 'kill-buffer)
+(evil-leader/set-key "b s" 'create-scratch-buffer)
 
 ;; EXIT
 (evil-leader/set-key "q q" 'save-buffers-kill-emacs)
 
-;; SEARCH
+;; SEARCH & EDIT
 (evil-leader/set-key "s s" 'helm-occur)
+(evil-leader/set-key "s S" 'helm-swoop-symble-pre-input)
 (evil-leader/set-key "s q" 'helm-occur-from-isearch)
+(evil-leader/set-key "s e" 'iedit-mode)
+
+(evil-leader/set-key "s p" 'helm-projectile-ag)
 
 ;; WINDOW
 (evil-leader/set-key "w m" 'maximize-window)
@@ -45,7 +60,7 @@
 (evil-leader/set-key "3" 'evil-window-bottom)
 
 ;; ACE JUMP
-(evil-leader/set-key "jj" 'ace-jump-char-mode)
+(evil-leader/set-key "j" 'ace-jump-word-mode)
 
 ;; HELP
 (evil-leader/set-key "h k" 'describe-key)
