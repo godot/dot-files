@@ -15,19 +15,19 @@
 
 (load-directory "~/.emacs.d/init.d")
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-(set-default-font "Hack-13")
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (sanityinc-solarized-light)))
+ '(custom-safe-themes
+   (quote
+    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(org-agenda-files (quote ("~/projects/nearme/desksnearme/notes.org")))
  '(package-selected-packages
    (quote
-    (evil-org ace-jump-buffer ace-jump-helm-line ace-jump-mode restclient-test restclient restclient-helm flycheck rubocop enh-ruby-mode expand-region better-defaults ag evil-multiedit evil-surround helm helm-ag helm-git helm-package helm-projectile helm-swoop evil-leader evil evil-escape evil-iedit-state evil-magit evil-space)))
+    (color-theme-sanityinc-solarized color-theme-sanityinc-tomorrow color-theme-solarized ruby-test-mode ruby-refactor rubocop restclient-test restclient-helm helm-swoop helm-projectile helm-package helm-git helm-ag fringe-helper flycheck expand-region evil-surround evil-space evil-org evil-multiedit evil-magit evil-iedit-state evil-escape enh-ruby-mode better-defaults ag ace-jump-mode ace-jump-helm-line ace-jump-buffer)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

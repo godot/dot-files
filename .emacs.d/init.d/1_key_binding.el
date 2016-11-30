@@ -7,6 +7,11 @@
 
 (evil-leader/set-key "v v" 'er/expand-region)
 (evil-leader/set-key "e e" 'eval-last-sexp)
+(evil-leader/set-key "; ;" 'comment-line)
+
+;; RUBY
+(evil-leader/set-key "r r m" 'ruby-refactor-extract-to-method)
+(evil-leader/set-key "r r v" 'ruby-refactor-extract-local-variable)
 
 ;; ORG
 
@@ -21,6 +26,7 @@
 
 ;; PROJECTILE
 (evil-leader/set-key "p f" 'helm-projectile-find-file)
+(evil-leader/set-key "p r" 'helm-projectile-recentf)
 (evil-leader/set-key "p p" 'helm-projectile-switch-project)
 (evil-leader/set-key "p b" 'helm-buffers-run-browse-project)
 (evil-leader/set-key "p v" 'magit-status)
@@ -32,8 +38,10 @@
 ;; BUFFERS
 (evil-leader/set-key "TAB" 'mode-line-other-buffer)
 (evil-leader/set-key "b b" 'helm-buffers-list)
-(evil-leader/set-key "b d" 'kill-buffer)
+(evil-leader/set-key "b d" 'kill-this-buffer)
 (evil-leader/set-key "b s" 'create-scratch-buffer)
+(evil-leader/set-key "]" 'evil-next-buffer)
+(evil-leader/set-key "[" 'evil-prev-buffer)
 
 ;; EXIT
 (evil-leader/set-key "q q" 'save-buffers-kill-emacs)
@@ -47,11 +55,9 @@
 (evil-leader/set-key "s p" 'helm-projectile-ag)
 
 ;; WINDOW
-(evil-leader/set-key "w m" 'maximize-window)
-(evil-leader/set-key "w =" 'balance-windows)
-(evil-leader/set-key "w q" 'delete-window)
-(evil-leader/set-key "w 2" 'evil-window-split)
-(evil-leader/set-key "w 3" 'evil-window-vsplit)
+(evil-leader/set-key "w m" 'delete-other-windows)
+(evil-leader/set-key "w 2" 'evil-window-vsplit)
+(evil-leader/set-key "w 3" 'evil-window-split)
 (evil-leader/set-key "w p" 'evil-window-next)
 (evil-leader/set-key "w n" 'evil-window-prev)
 (evil-leader/set-key "w 1" 'delete-other-windows)
