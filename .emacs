@@ -33,11 +33,5 @@
 (custom-set-faces
  '(default (
             (t
-             (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :family "Hack"))))
+             (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 133 :width normal :family "Hack"))))
  )
-
-;; (custom-set-faces
-;;  '(default (
-;;             (t
-;;              (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :family "Hack"))))
-;;  )
