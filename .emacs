@@ -27,11 +27,12 @@
  '(org-agenda-files (quote ("~/projects/nearme/desksnearme/notes.org")))
  '(package-selected-packages
    (quote
-    (color-theme-sanityinc-solarized color-theme-sanityinc-tomorrow color-theme-solarized ruby-test-mode ruby-refactor rubocop restclient-test restclient-helm helm-swoop helm-projectile helm-package helm-git helm-ag fringe-helper flycheck expand-region evil-surround evil-space evil-org evil-multiedit evil-magit evil-iedit-state evil-escape enh-ruby-mode better-defaults ag ace-jump-mode ace-jump-helm-line ace-jump-buffer)))
+    (docker yaml-mode color-theme-sanityinc-solarized color-theme-sanityinc-tomorrow color-theme-solarized ruby-test-mode ruby-refactor rubocop restclient-test restclient-helm helm-swoop helm-projectile helm-package helm-git helm-ag fringe-helper flycheck expand-region evil-surround evil-space evil-org evil-multiedit evil-magit evil-iedit-state evil-escape enh-ruby-mode better-defaults ag ace-jump-mode ace-jump-helm-line ace-jump-buffer)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
- '(default (
-            (t
-             (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 133 :width normal :family "Hack"))))
- )
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :family "Hack")))))

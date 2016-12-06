@@ -35,6 +35,10 @@
 (evil-leader/set-key "g s" 'magit-status)
 (evil-leader/set-key "g S" 'magit-stage-file)
 
+;; BOOKMARKS
+(evil-leader/set-key "b l" 'helm-filtered-bookmarks)
+(evil-leader/set-key "b L" 'helm-bookmarks)
+
 ;; BUFFERS
 (evil-leader/set-key "TAB" 'mode-line-other-buffer)
 (evil-leader/set-key "b b" 'helm-buffers-list)
@@ -71,3 +75,7 @@
 ;; HELP
 (evil-leader/set-key "h k" 'describe-key)
 (evil-leader/set-key "h c" 'describe-key-briefly)
+
+;; RESTCLIENT
+
+(evil-leader/set-key "r s" 'restclient-http-send-current-stay-in-window)
