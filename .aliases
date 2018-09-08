@@ -1,0 +1,5 @@
+alias dc=docker-compose
+alias ll='ls -l --group-directories-first --color'
+alias rc='cd ~/projects/platform-os/desksnearme; spring rails c'
+alias rs='cd ~/projects/platform-os/desksnearme; spring rails s'
+alias rj='cd ~/projects/platform-os/desksnearme; NO_SQL_LOGS=1 QUEUE=high_priority CACHE=1 rake jobs:work'
