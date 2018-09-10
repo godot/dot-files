@@ -1,0 +1,8 @@
+[user]
+	email = dgorzeba@gmail.com
+	name = godot
+[alias]
+	b = branch
+	st = status
+	ll = log --oneline
+	ch = checkout
