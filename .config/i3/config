@@ -9,7 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 #
-exec emacs
+exec emacs --daemon
+exec xinput set-prop 12 297 1
+exec xinput set-prop 12 279 1
 
 set $mod Mod4
 
@@ -168,7 +170,7 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-bindsym $mod+p exec sh /home/godot/bintake_screenshot
+bindsym Print exec ~/bin/take_screenshot
 
 bindsym $mod+r mode "resize"
 #bindsym $mod+r exec "notify-send Hello, i3"
@@ -177,7 +179,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-	position top
+  position top
 }
 
 #default_border pixel 0
@@ -187,4 +189,3 @@ new_window 1pixel
 #for_window [class="^.*] border pixel 0
 #
 for_window [class="zoom"] floating enable
-
