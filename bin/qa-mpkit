@@ -1,0 +1,2 @@
+PARTNER_PORTAL_HOST=https://qa-portal.apps.near-me.com
+docker run --user 1000:1000 -p "3333:3333" --rm -v $PWD:/app -it -e PARTNER_PORTAL_HOST=$PARTNER_PORTAL_HOST platformos/marketplace-kit $@

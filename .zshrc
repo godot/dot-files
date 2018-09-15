@@ -9,7 +9,7 @@ then
 fi
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-PROJECT_PATHS=(~/projects/nearme ~/projects/readma)
+PROJECT_PATHS=(~/projects/platform-os)
 
 plugins=(git pj)
 source $ZSH/oh-my-zsh.sh

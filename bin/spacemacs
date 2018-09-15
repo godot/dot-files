@@ -1,0 +1,4 @@
+#!/bin/bash
+dir=$(cat ~/.current-project)
+
+emacsclient "+${2:-1}" -n $dir/$1

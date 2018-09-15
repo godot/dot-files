@@ -1,0 +1,79 @@
+! urxvt
+!Xft.dpi: 92
+Xft.lcdfilter: lcddefault
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.autohint: 0
+Xft.rgba: rgb
+Xft.antialias: 1
+
+/* urL-yanking */
+URxvt.perl-ext-common: default,url-select,resize-font,selection-to-clipboard,matcher
+
+!# key bindings
+URxvt.matcher.button:       1
+URxvt.keysym.C-Delete:    matcher:last
+URxvt.keysym.M-Delete:    matcher:list
+!# regexps
+!# .0 for web links
+URxvt.matcher.pattern.0: \\B(/\\S+?):(\\d+)(?=:|$)
+
+!# launchers . Need all 0..x defined
+URxvt.matcher.launcher.0: spacemacs $1 $2
+URxvt.urlLauncher: xdg-open
+URxvt.matcher.rend.0: Uline Bold fg5
+
+/* Needs to be disabled for C-S keybindings to work */
+URxvt.urgentOnBell: true
+URxvt.cursorBlink: false
+URxvt.transparent: false
+URxvt.shading:          20
+URxvt.scrollBar:        false
+URxvt.saveLines:        4096
+URxvt.mouseWheelScrollPage: true
+
+URxvt.borderless: true
+
+/* Colors */
+
+!#include "/home/xintron/git/configs/gruvbox-contrib/xresources/gruvbox-dark.xresources"
+!#include "/home/xintron/git/configs/gruvbox-contrib/urxvt256/gruvbox-urxvt256.xresources"
+
+! Enable the extended coloring options
+rofi.color-enabled: true
+!                  bg       border   separator
+rofi.color-window: #282828, #a89984, #a89984
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: #282828, #ebdbb2, #32302f, #665c54, #fbf1c7
+rofi.color-active: #d79921, #282828, #d79921, #fabd2f, #282828
+rofi.color-urgent: #cc241d, #282828, #cc241d, #fb4934, #282828
+
+rofi.separator-style: solid
+rofi.sidebar-mode: true
+rofi.bw: 1
+rofi.columns: 1
+rofi.padding: 16
+
+rofi.yoffset: 0
+rofi.fake-transparency: false
+rofi.location: 0
+rofi.width: 50
+rofi.font: Hasklig 12
+rofi.lines: 15
+rofi.fixed-num-lines: true
+
+/* fonts */
+!URxvt.font:			xft:Liberation Mono:pixelsize=12
+!URxvt.boldFont:		xft:Liberation Mono:bold:pixelsize=12
+!Urxvt.italicFont:		xft:Liberation Mono:italic:pixelsize=12
+URxvt.font:			xft:Hack:size=10
+URxvt.boldFont:			xft:Hack:bold:size=10
+Urxvt.italicFont:		xft:Hack:italic:size=10
+URxvt.letterSpace: -1
+
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
